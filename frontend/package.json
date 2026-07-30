@@ -1,0 +1,39 @@
+{
+  "name": "cold-dailer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "predeploy": "npm run build",
+    "deploy": "cp -r dist/* ../hostinger/"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.111.0",
+    "@tanstack/react-query": "^5.101.4",
+    "@tanstack/react-query-devtools": "^5.101.4",
+    "lucide-react": "^0.445.0",
+    "papaparse": "^5.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.6.0",
+    "react-router-dom": "^6.30.4",
+    "sip.js": "^0.21.0",
+    "tailwindcss": "^3.4.13",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/papaparse": "^5.5.2",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.15.0",
+    "postcss": "^8.4.47",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5"
+  }
+}
