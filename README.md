@@ -4,6 +4,8 @@ A free, open-source browser-based cold calling dialer with SIP support. No insta
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Node](https://img.shields.io/badge/node-20%2B-brightgreen)
+![Stars](https://img.shields.io/github/stars/6t9xstar/Open-Cold-Dialer?style=social)
+![Last Commit](https://img.shields.io/github/last-commit/6t9xstar/Open-Cold-Dialer)
 
 ## Features
 
@@ -18,6 +20,14 @@ A free, open-source browser-based cold calling dialer with SIP support. No insta
 - **Self-Hosted Backend** — SQLite database, no cloud dependencies required
 - **Supabase Support** — Optional cloud database backend
 - **Docker Ready** — One-command deployment
+
+## Why Cold Dialer?
+
+Most cold calling tools cost $50-200/user/month. Cold Dialer is:
+- **Free forever** — No hidden fees, no per-seat pricing
+- **Self-hosted** — Your data stays on your server
+- **Provider agnostic** — Works with any SIP provider
+- **Customizable** — Modify anything to fit your workflow
 
 ## Quick Start
 
