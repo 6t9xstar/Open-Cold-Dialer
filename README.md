@@ -143,9 +143,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 MIT License — see [LICENSE](LICENSE)
 
+## Contributors
+
+- [@6t9xstar](https://github.com/6t9xstar) — Malik Taimoor Awan
+
 ## Support
 
 - [Documentation](docs/)
 - [SIP Provider Guides](docs/sip-providers.md)
 - [Deployment Guide](docs/deployment.md)
-- [GitHub Issues](https://github.com/6t9xstar/cold-dialer/issues)
+- [GitHub Issues](https://github.com/6t9xstar/Open-Cold-Dialer/issues)
