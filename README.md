@@ -1,11 +1,44 @@
-# Cold Dialer
+# Open Cold Dialer
 
 A free, open-source browser-based cold calling dialer with SIP support. No install required — runs in your browser.
 
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Node](https://img.shields.io/badge/node-20%2B-brightgreen)
 ![Stars](https://img.shields.io/github/stars/6t9xstar/Open-Cold-Dialer?style=social)
+![Forks](https://img.shields.io/github/forks/6t9xstar/Open-Cold-Dialer?style=social)
 ![Last Commit](https://img.shields.io/github/last-commit/6t9xstar/Open-Cold-Dialer)
+![Issues](https://img.shields.io/github/issues/6t9xstar/Open-Cold-Dialer)
+![License](https://img.shields.io/github/license/6t9xstar/Open-Cold-Dialer)
+
+---
+
+## Demo
+
+> **Coming soon** — Demo video and screenshots
+
+<!-- Add screenshots here: -->
+<!-- ![Dashboard](docs/screenshots/dashboard.png) -->
+<!-- ![Softphone](docs/screenshots/softphone.png) -->
+<!-- ![Leads](docs/screenshots/leads.png) -->
+
+---
+
+## Why Cold Dialer?
+
+| Feature | Cold Dialer | RingCentral | Dialpad | Five9 |
+|---------|------------|-------------|---------|-------|
+| Price | **Free** | $30/user/mo | $25/user/mo | $150+/user/mo |
+| Self-hosted | Yes | No | No | No |
+| Open Source | Yes | No | No | No |
+| SIP Provider | Any | Locked | Locked | Locked |
+| Browser-based | Yes | Yes | Yes | Yes |
+| Lead Management | Yes | Extra | Extra | Extra |
+| CSV Import | Yes | No | No | Yes |
+| Call Scripts | Yes | No | No | Yes |
+
+**Cold Dialer** = Free forever, self-hosted, works with any SIP provider.
+
+---
 
 ## Features
 
@@ -20,22 +53,17 @@ A free, open-source browser-based cold calling dialer with SIP support. No insta
 - **Self-Hosted Backend** — SQLite database, no cloud dependencies required
 - **Supabase Support** — Optional cloud database backend
 - **Docker Ready** — One-command deployment
+- **REST API** — Full API for integrations
 
-## Why Cold Dialer?
+---
 
-Most cold calling tools cost $50-200/user/month. Cold Dialer is:
-- **Free forever** — No hidden fees, no per-seat pricing
-- **Self-hosted** — Your data stays on your server
-- **Provider agnostic** — Works with any SIP provider
-- **Customizable** — Modify anything to fit your workflow
-
-## Quick Start
+## Quick Start (5 Minutes)
 
 ### Option 1: Self-Hosted (Recommended)
 
 ```bash
-git clone https://github.com/6t9xstar/cold-dialer.git
-cd cold-dialer
+git clone https://github.com/6t9xstar/Open-Cold-Dialer.git
+cd Open-Cold-Dialer
 
 # Backend
 cd backend
@@ -53,11 +81,13 @@ npm run dev
 
 Open http://localhost:3000 — 20 sample leads pre-loaded.
 
+**Default login:** `admin@example.com` / `password123`
+
 ### Option 2: Docker
 
 ```bash
-git clone https://github.com/6t9xstar/cold-dailer.git
-cd cold-dailer
+git clone https://github.com/6t9xstar/Open-Cold-Dialer.git
+cd Open-Cold-Dialer
 cp .env.example .env.local
 docker compose up -d
 docker compose exec backend npm run seed
@@ -66,14 +96,15 @@ docker compose exec backend npm run seed
 ### Option 3: Supabase (Cloud)
 
 ```bash
-cd frontend
+git clone https://github.com/6t9xstar/Open-Cold-Dialer.git
+cd Open-Cold-Dialer/frontend
 npm install
 cp .env.example .env.local
 # Add your Supabase URL and anon key to .env.local
 npm run dev
 ```
 
-See [Full Quick Start Guide](docs/quick-start.md)
+---
 
 ## SIP Configuration
 
@@ -90,6 +121,8 @@ Works with SignalWire, Telnyx, Twilio, Asterisk, FreeSWITCH, or any SIP server.
 
 See [SIP Providers Guide](docs/sip-providers.md)
 
+---
+
 ## Tech Stack
 
 | Layer | Technology |
@@ -102,30 +135,32 @@ See [SIP Providers Guide](docs/sip-providers.md)
 | Validation | Zod |
 | CSV Import | PapaParse |
 
+---
+
 ## Project Structure
 
 ```
-cold-dialer/
+Open-Cold-Dialer/
 ├── frontend/                # React SPA
-│   ├── src/
-│   │   ├── components/      # UI components
-│   │   ├── hooks/           # Data fetching hooks
-│   │   ├── lib/             # Supabase, auth, API client
-│   │   ├── pages/           # Route pages
-│   │   ├── sip/             # SIP configuration
-│   │   └── types/           # TypeScript types
-│   └── ...
+│   └── src/
+│       ├── components/      # UI components
+│       ├── hooks/           # Data fetching hooks
+│       ├── lib/             # Supabase, auth, API client
+│       ├── pages/           # Route pages
+│       ├── sip/             # SIP configuration
+│       └── types/           # TypeScript types
 ├── backend/                 # Express API server
-│   ├── src/
-│   │   ├── db/              # SQLite schema + seed
-│   │   ├── middleware/      # Auth middleware
-│   │   └── routes/          # API routes
-│   └── ...
+│   └── src/
+│       ├── db/              # SQLite schema + seed
+│       ├── middleware/      # Auth middleware
+│       └── routes/          # API routes
 ├── docs/                    # Documentation
+├── docker/                  # Docker configuration
 ├── supabase/                # Database migrations
-├── scripts/                 # Deploy scripts
-└── docker/                  # Docker configuration
+└── scripts/                 # Deploy scripts
 ```
+
+---
 
 ## API Endpoints
 
@@ -145,21 +180,66 @@ cold-dialer/
 | POST | /api/call-logs | Create call log |
 | GET | /api/scripts | List scripts |
 
+---
+
+## Roadmap
+
+- [ ] Audio device selector (mic/speaker)
+- [ ] Call recording
+- [ ] Parallel dialing (power dialer)
+- [ ] Voicemail detection
+- [ ] DNC list management
+- [ ] Appointment scheduling
+- [ ] Webhook integrations
+- [ ] AI call summary
+
+See [Open Issues](https://github.com/6t9xstar/Open-Cold-Dialer/issues) for more.
+
+---
+
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+```bash
+# Fork the repo
+# Create your feature branch
+git checkout -b feature/amazing-feature
+# Commit your changes
+git commit -m "Add amazing feature"
+# Push to the branch
+git push origin feature/amazing-feature
+# Open a Pull Request
+```
+
+---
 
 ## License
 
 MIT License — see [LICENSE](LICENSE)
 
+---
+
 ## Contributors
 
-- [@6t9xstar](https://github.com/6t9xstar) — Malik Taimoor Awan
+<a href="https://github.com/6t9xstar">
+  <img src="https://contrib.rocks/image?repo=6t9xstar/Open-Cold-Dialer" />
+</a>
+
+---
 
 ## Support
 
 - [Documentation](docs/)
+- [Quick Start Guide](docs/quick-start.md)
 - [SIP Provider Guides](docs/sip-providers.md)
 - [Deployment Guide](docs/deployment.md)
 - [GitHub Issues](https://github.com/6t9xstar/Open-Cold-Dialer/issues)
+
+---
+
+## Star History
+
+If you find this useful, please give it a star! It helps others discover the project.
+
+[![Star History Chart](https://api.star-history.com/svg?repos=6t9xstar/Open-Cold-Dialer&type=Date)](https://star-history.com/#6t9xstar/Open-Cold-Dialer&Date)
