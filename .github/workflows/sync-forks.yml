@@ -1,0 +1,14 @@
+name: Sync forks
+
+on:
+  schedule:
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ZedThree/merge-upstream@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
