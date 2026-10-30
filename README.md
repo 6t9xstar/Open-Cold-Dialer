@@ -1,5 +1,7 @@
 # Open Cold Dialer
 
+![GitHub stars](https://img.shields.io/github/stars/6t9xstar/Open-Cold-Dialer?style=social)
+
 A free, open-source browser-based cold calling dialer with SIP support. No install required — runs in your browser.
 
 ![License](https://img.shields.io/badge/license-MIT-green)
