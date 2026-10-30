@@ -1,16 +1,24 @@
 # Open Cold Dialer
 
-![GitHub stars](https://img.shields.io/github/stars/6t9xstar/Open-Cold-Dialer?style=social)
-
-A free, open-source browser-based cold calling dialer with SIP support. No install required — runs in your browser.
-
+![GitHub stars](https://img.shields.io/github/stars/6t9xstar/Open-Cold-Dialer?style=social&label=%E2%AD%90)
+![GitHub forks](https://img.shields.io/github/forks/6t9xstar/Open-Cold-Dialer?style=social&label=%F0%9F%94%A5)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Node](https://img.shields.io/badge/node-20%2B-brightgreen)
-![Stars](https://img.shields.io/github/stars/6t9xstar/Open-Cold-Dialer?style=social)
-![Forks](https://img.shields.io/github/forks/6t9xstar/Open-Cold-Dialer?style=social)
-![Last Commit](https://img.shields.io/github/last-commit/6t9xstar/Open-Cold-Dialer)
 ![Issues](https://img.shields.io/github/issues/6t9xstar/Open-Cold-Dialer)
-![License](https://img.shields.io/github/license/6t9xstar/Open-Cold-Dialer)
+![Last Commit](https://img.shields.io/github/last-commit/6t9xstar/Open-Cold-Dialer)
+
+**If this project helps you, please ⭐ star it — it motivates continued development!**
+
+## Table of Contents
+
+- [Demo](#demo)
+- [Why Cold Dialer?](#why-cold-dialer)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
