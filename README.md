@@ -12,6 +12,7 @@
 ## Table of Contents
 
 - [Demo](#demo)
+- [💯 100% Self-Hosted — Free Code, You Only Pay SIP](#-100-self-hosted--free-code-you-only-pay-sip)
 - [Why Cold Dialer?](#why-cold-dialer)
 - [Features](#features)
 - [Installation](#installation)
