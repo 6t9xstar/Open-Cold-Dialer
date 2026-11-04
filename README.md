@@ -18,7 +18,7 @@ A browser softphone with lead management, campaigns, call scripts and call logs,
 ![Docker](https://img.shields.io/badge/Docker-ready-1d4ed8?logo=docker&logoColor=white)
 ![GitHub stars](https://img.shields.io/github/stars/6t9xstar/Open-Cold-Dialer?style=social)
 
-**[Get the source](#-get-the-full-source-code)** · **[Features](#-features)** · **[Compare](#-why-open-cold-dialer)** · **[How it works](#-how-it-works)** · **[FAQ](#-faq)** · **[Contact](#-contact)**
+**[Get the source](#-get-the-full-source-code)** · **[Features](#-features)** · **[Use cases](#-who-its-for)** · **[Compare](#-why-open-cold-dialer)** · **[How it works](#-how-it-works)** · **[Security](#-security-and-privacy)** · **[FAQ](#-faq)** · **[Contributors](#-contributors)** · **[Contact](#-contact)**
 
 </div>
 
@@ -152,6 +152,17 @@ Try every screen before a SIP provider is connected.
 
 ---
 
+## 🏢 Who it's for
+
+| | |
+|---|---|
+| **Outbound sales teams** | SDRs and closers dialing from lead lists, with scripts and outcomes in one place |
+| **Agencies and lead-gen firms** | Run separate campaigns per client on infrastructure you control |
+| **Call centers** | Browser-based seats with no per-agent licence, on your own SIP trunk |
+| **Startups and small businesses** | A professional dialer without a monthly SaaS bill that grows with every hire |
+
+---
+
 ## 💸 Why Open Cold Dialer?
 
 | | **Open Cold Dialer** | RingCentral | Dialpad | Five9 |
@@ -187,6 +198,16 @@ Try every screen before a SIP provider is connected.
 1. **We install it** on your server, with Docker or npm.
 2. **We connect your SIP provider:** SIP URI, WebSocket URL and caller ID.
 3. **Your team starts dialing:** import leads, build campaigns, call from the browser.
+
+---
+
+## 🔒 Security and privacy
+
+- **Your data stays on your server.** Leads, call logs and scripts live in your own database, not a vendor's cloud.
+- **Encrypted calling.** Browser audio and signalling run over WebRTC and secure WebSockets (WSS).
+- **Authenticated API.** Every request uses JWT sessions, with passwords hashed by bcrypt.
+- **Role-based access.** Control what each user can see and do.
+- **HTTPS by default** in the setup we deliver, because browsers only allow microphone access on secure pages.
 
 ---
 
@@ -267,6 +288,30 @@ No. The softphone runs in the browser. Agents need a microphone, and headphones 
 <br>
 On your own server, in SQLite. Supabase is available if you prefer a managed database.
 </details>
+
+---
+
+## 👥 Contributors
+
+<a href="https://github.com/6t9xstar/Open-Cold-Dialer/graphs/contributors"><img src="https://contrib.rocks/image?repo=6t9xstar/Open-Cold-Dialer" alt="Contributors to Open Cold Dialer"></a>
+
+| Role | |
+|---|---|
+| **Creator and maintainer** | [Malik Taimoor Awan (@6t9xstar)](https://github.com/6t9xstar) |
+| **Company** | Apex Softeck |
+
+### Become a contributor
+
+We welcome developers who want to help build the roadmap: call recording, the power dialer, voicemail detection and more.
+
+1. Pick a roadmap item or [open an issue](https://github.com/6t9xstar/Open-Cold-Dialer/issues/new) with your idea.
+2. [Email us](mailto:mtaimoormalik99@gmail.com?subject=Open%20Cold%20Dialer%20-%20Contributor) to get access to the source code.
+3. Send your changes as a pull request. Every merged contributor appears in the list above.
+
+### Built with
+
+Open Cold Dialer stands on great open-source work. Thank you to the teams behind
+[SIP.js](https://sipjs.com), [React](https://react.dev), [Vite](https://vite.dev), [Tailwind CSS](https://tailwindcss.com), [Express](https://expressjs.com), [SQLite](https://sqlite.org), [TanStack Query](https://tanstack.com/query), [Zod](https://zod.dev), [PapaParse](https://www.papaparse.com) and [Supabase](https://supabase.com).
 
 ---
 
