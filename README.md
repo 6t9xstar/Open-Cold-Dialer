@@ -2,7 +2,7 @@
 
 <a href="https://dailer.apexsofteck.com"><img src=".github/assets/banner.webp" alt="Dialer by 6t9: self-hosted cold calling software" width="100%"></a>
 
-# Open Cold Dialer
+# Open Cold Dialer 3.0
 
 ### Self-hosted cold calling software. Your server, your SIP provider, no per-seat fees.
 
